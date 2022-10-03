@@ -11,6 +11,23 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
@@ -79,7 +96,7 @@
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
             </p>
-            <p class="learn-more">Learn more</p>
+            <p class="learn-more learn-second">Learn more</p>
           </article>
         </section>
       </section>
@@ -121,35 +138,35 @@
 
       <!-- client testimonials -->
       <section class="client">
-        <h1 class="client-testimonials">Client testimonials</h1>
+        <h1 class="client__testimonials">Client testimonials</h1>
         <section class="client__feedback">
-          <span class="client__profile"></span>
-          <p>
+          <span class="profile emily"></span>
+          <p class="comment">
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
           </p>
-          <p class="client__name">Emily R.</p>
-          <p class="client__job">Marketing Director</p>
+          <p class="name">Emily R.</p>
+          <p class="job">Marketing Director</p>
         </section>
 
         <section class="client__feedback">
-          <span class="client__profile"></span>
-          <p>
+          <span class="profile thomas"></span>
+          <p class="comment">
             Sunnyside’s enthusiasm coupled with their keen interest in our
             brand’s success made it a satisfying and enjoyable experience.
           </p>
-          <p class="client__name">Thomas S.</p>
-          <p class="client__job">Chief Operating Officer</p>
+          <p class="name">Thomas S.</p>
+          <p class="job">Chief Operating Officer</p>
         </section>
 
         <section class="client__feedback">
-          <span class="client__profile"></span>
-          <p>
+          <span class="profile jennie"></span>
+          <p class="comment">
             Incredible end result! Our sales increased over 400% when we worked
             with Sunnyside. Highly recommended!
           </p>
-          <p class="client__name">Jennie F.</p>
-          <p class="client__job">Business Owner</p>
+          <p class="name">Jennie F.</p>
+          <p class="job">Business Owner</p>
         </section>
       </section>
 
@@ -190,19 +207,26 @@
         </picture>
         <picture class="desktop-hero">
           <img
-            src="/images/desktop/image-gallery-sugar-cubes.jpg"
+            src="/images/desktop/image-gallery-sugarcubes.jpg"
             alt="sugar-cube"
           />
         </picture>
       </div>
       <footer>
-        <div class="sunnyside-logo"></div>
+        <picture class="sunnyside-footer">
+          <img src="/images/logo.svg" alt="sunnyside-footer" />
+        </picture>
         <div class="details">
-          <p>about</p>
-          <p>services</p>
-          <p>projects</p>
+          <span>about</span>
+          <span>services</span>
+          <span>projects</span>
         </div>
-        <div class="social-media"></div>
+        <div class="social-media">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
       </footer>
     </main>
   </body>
