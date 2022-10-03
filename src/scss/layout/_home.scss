@@ -1,0 +1,185 @@
+@use "../abstracts" as *;
+
+// main page section
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .title {
+    position: absolute;
+    top: 6rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+  }
+  .arrow-down {
+    position: absolute;
+    bottom: 9rem;
+  }
+}
+
+// second page section
+.second-page {
+  &__description {
+    padding: 5rem 2rem;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+    .learn-more {
+      margin-top: 1rem;
+      font-weight: $font-extra-bold;
+      font-family: $font-style-01;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: $very-dark;
+      font-size: 1rem;
+      position: relative;
+      min-width: 100%;
+
+      &::before {
+        content: "";
+        border-radius: 20px;
+        min-height: 6px;
+        min-width: 8.2rem;
+        background-color: lighten($color: $yellow, $amount: 35%);
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+    .learn-second::before {
+      background-color: lighten($color: $soft-red, $amount: 20%);
+    }
+  }
+}
+
+// third page section
+.third-page {
+  text-align: center;
+
+  &__features {
+    position: relative;
+  }
+  &__description {
+    position: absolute;
+    padding: 2rem;
+    bottom: 2rem;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    & > * {
+      color: $dark-blue;
+    }
+  }
+}
+
+// client section
+
+.client {
+  padding: 3rem 2rem;
+  align-items: center;
+  text-align: center;
+
+  &__testimonials {
+    color: $grayish-blue;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__feedback {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .comment {
+      color: $very-darkgrayish;
+      margin-bottom: 2rem;
+    }
+    .profile {
+      margin-bottom: 1rem;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: $dark-moderate;
+    }
+    .emily {
+      background-image: url(/images/image-emily.jpg);
+      background-position: center;
+      background-size: contain;
+    }
+
+    .thomas {
+      background-image: url(/images/image-thomas.jpg);
+      background-position: center;
+      background-size: contain;
+    }
+
+    .jennie {
+      background-image: url(/images/image-jennie.jpg);
+      background-position: center;
+      background-size: contain;
+    }
+
+    .name {
+      color: $very-dark;
+      font-family: $font-style-01;
+      font-weight: $font-extra-bold;
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+// fourth section
+
+.fourth-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+//footer
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lighten($color: $dark-moderate, $amount: 35%);
+  padding: 3rem 1rem;
+
+  .sunnyside-footer {
+    filter: invert(45%) sepia(66%) saturate(289%) hue-rotate(118deg)
+      brightness(65%) contrast(86%);
+    margin-bottom: 2rem;
+  }
+  & > * {
+    color: lighten($color: $dark-desaturated, $amount: 10%);
+  }
+
+  .details {
+    margin-bottom: 4rem;
+    span {
+      padding: 0 1rem;
+      font-family: $font-style-02;
+      text-transform: capitalize;
+      font-size: 1.1rem;
+    }
+  }
+
+  .social-media {
+    * {
+      margin: 0 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}
