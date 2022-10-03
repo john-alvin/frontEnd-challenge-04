@@ -5,3 +5,39 @@
   padding: 0;
   margin: 0;
 }
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: $font-style-01, sans-serif;
+  font-weight: $font-extra-bold;
+  font-size: 2rem;
+}
+p {
+  font-family: $font-style-02, sans-serif;
+  font-size: 1rem;
+  font-weight: $font-semi-bold;
+  color: $dark-grayish;
+}
+
+@include mobile {
+  .desktop-hero {
+    display: none;
+  }
+}
+
+@include desktop {
+  .mobile-hero {
+    display: none;
+  }
+  .desktop-hero {
+    display: block;
+  }
+}
