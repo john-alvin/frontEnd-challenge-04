@@ -5,24 +5,23 @@
   padding: 0;
   margin: 0;
 }
-
 ul {
   list-style-type: none;
 }
 
 img {
-  max-width: 100%;
+  min-height: 100%;
   display: block;
 }
 
 h1 {
   font-family: $font-style-01, sans-serif;
   font-weight: $font-extra-bold;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2.5rem + 1vw, 3rem);
 }
 p {
   font-family: $font-style-02, sans-serif;
-  font-size: 1rem;
+  font-size: clamp(0.7rem, 0.9rem + 1vw, 1.1rem);
   font-weight: $font-semi-bold;
   color: $dark-grayish;
 }
@@ -30,6 +29,11 @@ p {
 @include mobile {
   .desktop-hero {
     display: none;
+  }
+  .mobile-hero {
+    img {
+      max-width: 100%;
+    }
   }
 }
 
@@ -39,5 +43,8 @@ p {
   }
   .desktop-hero {
     display: block;
+    img {
+      width: 100%;
+    }
   }
 }
