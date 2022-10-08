@@ -100,6 +100,9 @@
 // client section
 
 .client {
+  padding: 3rem 2rem;
+  align-items: center;
+  text-align: center;
   &__testimonials {
     color: $grayish-blue;
     text-transform: uppercase;
@@ -107,9 +110,6 @@
     letter-spacing: 0.4rem;
     margin-bottom: 2rem;
   }
-  padding: 3rem 2rem;
-  align-items: center;
-  text-align: center;
 
   &__feedback {
     margin-bottom: 4rem;
