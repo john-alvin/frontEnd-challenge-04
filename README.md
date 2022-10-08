@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution here](https://your-solution-url.com)
+- Solution URL: [solution here](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-solution-sass-FvXnUFZV3P)
 - Live Site URL: [live-here](https://sunnyside-landing-page-solution.netlify.app/)
 
 ## My process
