@@ -14,12 +14,14 @@ img {
   display: block;
 }
 
-h1 {
+h1,
+h2 {
   font-family: $font-style-01, sans-serif;
   font-weight: $font-extra-bold;
   font-size: clamp(1rem, 2.5rem + 1vw, 3rem);
   text-transform: capitalize;
 }
+
 p {
   font-family: $font-style-02, sans-serif;
   font-size: clamp(0.7rem, 0.9rem + 1vw, 1.1rem);
