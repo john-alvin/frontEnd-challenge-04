@@ -6,16 +6,19 @@ header {
   justify-content: space-between;
   position: absolute;
   z-index: 1;
-  padding: 2rem;
-  top: 0;
+  padding: 2rem 1.2rem;
 
   .main-logo {
+    position: relative;
     img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       min-height: 2rem;
     }
   }
-
   .burger-menu {
+    cursor: pointer;
     img {
       min-height: 1rem;
     }
