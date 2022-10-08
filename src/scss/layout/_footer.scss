@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lighten($color: $dark-moderate, $amount: 35%);
+  padding: 3rem 1rem;
+
+  .sunnyside-footer {
+    filter: invert(45%) sepia(66%) saturate(289%) hue-rotate(118deg)
+      brightness(65%) contrast(86%);
+    margin-bottom: 2rem;
+  }
+  & > * {
+    color: lighten($color: $dark-desaturated, $amount: 10%);
+  }
+
+  .details {
+    margin-bottom: 4rem;
+    span {
+      padding: 0 1rem;
+      font-family: $font-style-02;
+      text-transform: capitalize;
+      font-size: 1.1rem;
+    }
+  }
+
+  .social-media {
+    * {
+      margin: 0 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}
